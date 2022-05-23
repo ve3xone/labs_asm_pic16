@@ -1,0 +1,82 @@
+
+
+Microchip MPLAB XC8 Assembler V2.36 build 20220127204148 
+                                                                                                           Fri May 20 09:19:49 2022
+
+
+     1                           	processor	16F84A
+     2                           	pagewidth 132
+     3                           	psect	code,global,class=CODE,delta=2
+     4                           	psect	powerup,global,class=CODE,delta=2
+     5                           	psect	reset_vec,global,class=CODE,delta=2
+     6                           	psect	maintext,global,class=CODE,delta=2
+     7                           	psect	eeprom_data,global,class=EEDATA,space=3,delta=2,noexec
+     8                           	psect	intentry,global,class=CODE,delta=2
+     9                           	psect	functab,global,class=ENTRY,delta=2
+    10                           	psect	init,global,class=CODE,delta=2
+    11                           	psect	cinit,global,class=CODE,delta=2
+    12                           	psect	text,global,class=CODE,delta=2
+    13                           	psect	end_init,global,class=CODE,delta=2
+    14                           	psect	clrtext,global,class=CODE,delta=2
+    15                           	psect	strings,global,reloc=256,class=CODE,delta=2
+    16                           	psect	stack,global,class=STACK,space=2,delta=1,noexec
+    17                           	psect	bank0,global,class=BANK0,space=1,delta=1
+    18                           	psect	bank1,global,class=BANK1,space=1,delta=1
+    19                           	psect	ram,global,class=RAM,space=1,delta=1
+    20                           	psect	abs1,global,class=ABS1,space=1,delta=1
+    21                           	psect	common,global,class=COMMON,space=1,delta=1
+    22                           	psect	sfr0,global,class=SFR0,space=1,delta=1
+    23                           	psect	sfr1,global,class=SFR1,space=1,delta=1
+    24                           
+    25                           	psect	reset_vec
+    26  0000                     reset_vec:
+    27                           
+    28                           	psect	maintext
+    29                           
+    30                           ; Microchip MPLAB XC8 C Compiler V2.36
+    31                           ; Copyright (C) 2022 Microchip Technology Inc.
+    32                           ; Auto-generated runtime startup code for final link stage.
+    33                           ;
+    34                           ; Compiler options:
+    35                           ;
+    36                           ; main.c --outdir=.\Debug
+    37                           ;
+    38  0000                     C	set	0
+    39  0002                     Z	set	2
+    40  0002                     PCL	set	2
+    41  0000                     INDF	set	0
+    42  000A                     
+    43                           	psect	functab
+    44  0000                     intlevel0:
+    45  0000                     intlevel1:
+    46  0000                     intlevel2:
+    47  0000                     intlevel3:
+    48  0000                     intlevel4:
+    49  0000                     intlevel5:
+    50                           
+    51                           	psect	init
+    52  0000                     start:	
+    53                           ; No powerup routine
+    54                           ; No interrupt routine
+    55                           
+    56                           
+    57                           	psect	end_init
+    58  0000  2BFE               	ljmp	start_initialization	;jump to C runtime clear & initialization
+    59                           
+    60                           	psect	clrtext
+    61  0004                     FSR	set	4
+    62                           
+    63                           	psect	strings
+    64  0000                     
+    65                           	psect	stack
+    66  0000                     ___sp:
+    67  0000                     ___int_sp:
+
+
+Microchip Technology PIC Macro Assembler V2.36 build 20220127204148 
+Symbol Table                                                                                               Fri May 20 09:19:49 2022
+
+               ___sp 0000                 _main 03EF                 start 0000  start_initialization 03FE  
+          ___stackhi 0000            ___stacklo 0000             ___int_sp 0000             intlevel0 0000  
+           intlevel1 0000             intlevel2 0000             intlevel3 0000             intlevel4 0000  
+           intlevel5 0000             reset_vec 0000  

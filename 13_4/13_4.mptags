@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+a	Z:\Projects\ASMProjects\13_4\13_4.asm	125;"	l	line:125
+a2	Z:\Projects\ASMProjects\13_4\13_4.asm	119;"	l	line:119
+addwf	Z:\Projects\ASMProjects\13_4\13_4.asm	102;"	l	line:102
+base	Z:\Projects\ASMProjects\13_4\13_4.asm	96;"	l	line:96
+bcf	Z:\Projects\ASMProjects\13_4\13_4.asm	128;"	l	line:128
+bcf	Z:\Projects\ASMProjects\13_4\13_4.asm	129;"	l	line:129
+bcf	Z:\Projects\ASMProjects\13_4\13_4.asm	9;"	l	line:9
+bsf	Z:\Projects\ASMProjects\13_4\13_4.asm	123;"	l	line:123
+bsf	Z:\Projects\ASMProjects\13_4\13_4.asm	4;"	l	line:4
+btfss	Z:\Projects\ASMProjects\13_4\13_4.asm	126;"	l	line:126
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	13;"	l	line:13
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	17;"	l	line:17
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	40;"	l	line:40
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	63;"	l	line:63
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	86;"	l	line:86
+call	Z:\Projects\ASMProjects\13_4\13_4.asm	97;"	l	line:97
+cycl	Z:\Projects\ASMProjects\13_4\13_4.asm	16;"	l	line:16
+decfsz	Z:\Projects\ASMProjects\13_4\13_4.asm	130;"	l	line:130
+goto	Z:\Projects\ASMProjects\13_4\13_4.asm	127;"	l	line:127
+goto	Z:\Projects\ASMProjects\13_4\13_4.asm	131;"	l	line:131
+goto	Z:\Projects\ASMProjects\13_4\13_4.asm	94;"	l	line:94
+include	Z:\Projects\ASMProjects\13_4\13_4.asm	1;"	l	line:1
+ledtable	Z:\Projects\ASMProjects\13_4\13_4.asm	101;"	l	line:101
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	117;"	l	line:117
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	120;"	l	line:120
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	122;"	l	line:122
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	12;"	l	line:12
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	18;"	l	line:18
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	41;"	l	line:41
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	5;"	l	line:5
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	64;"	l	line:64
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	7;"	l	line:7
+movlw	Z:\Projects\ASMProjects\13_4\13_4.asm	87;"	l	line:87
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	118;"	l	line:118
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	121;"	l	line:121
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	124;"	l	line:124
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	19;"	l	line:19
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	42;"	l	line:42
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	65;"	l	line:65
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	6;"	l	line:6
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	88;"	l	line:88
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	8;"	l	line:8
+movwf	Z:\Projects\ASMProjects\13_4\13_4.asm	98;"	l	line:98
+next0	Z:\Projects\ASMProjects\13_4\13_4.asm	85;"	l	line:85
+next3	Z:\Projects\ASMProjects\13_4\13_4.asm	39;"	l	line:39
+next6	Z:\Projects\ASMProjects\13_4\13_4.asm	62;"	l	line:62
+pause	Z:\Projects\ASMProjects\13_4\13_4.asm	116;"	l	line:116
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	103;"	l	line:103
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	104;"	l	line:104
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	105;"	l	line:105
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	106;"	l	line:106
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	107;"	l	line:107
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	108;"	l	line:108
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	109;"	l	line:109
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	110;"	l	line:110
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	111;"	l	line:111
+retlw	Z:\Projects\ASMProjects\13_4\13_4.asm	112;"	l	line:112
+return	Z:\Projects\ASMProjects\13_4\13_4.asm	113;"	l	line:113
+return	Z:\Projects\ASMProjects\13_4\13_4.asm	132;"	l	line:132
+return	Z:\Projects\ASMProjects\13_4\13_4.asm	99;"	l	line:99

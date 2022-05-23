@@ -1,0 +1,99 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[p mainexit ]
+"455 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic16f84a.h
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"499
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+[v F38 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.36\pic\include\builtins.h
+[v __delay `JF38 ~T0 @X0 0 e ]
+[p i __delay ]
+"167 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic16f84a.h
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"673
+[v _RA4 `Vb ~T0 @X0 0 e@44 ]
+"55 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic16f84a.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"213
+[; <" PORTB equ 06h ;# ">
+"275
+[; <" EEDATA equ 08h ;# ">
+"282
+[; <" EEADR equ 09h ;# ">
+"289
+[; <" PCLATH equ 0Ah ;# ">
+"309
+[; <" INTCON equ 0Bh ;# ">
+"387
+[; <" OPTION_REG equ 081h ;# ">
+"457
+[; <" TRISA equ 085h ;# ">
+"501
+[; <" TRISB equ 086h ;# ">
+"563
+[; <" EECON1 equ 088h ;# ">
+"607
+[; <" EECON2 equ 089h ;# ">
+"55 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic16f84.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"213
+[; <" PORTB equ 06h ;# ">
+"275
+[; <" EEDATA equ 08h ;# ">
+"282
+[; <" EEADR equ 09h ;# ">
+"289
+[; <" PCLATH equ 0Ah ;# ">
+"309
+[; <" INTCON equ 0Bh ;# ">
+"387
+[; <" OPTION_REG equ 081h ;# ">
+"457
+[; <" TRISA equ 085h ;# ">
+"501
+[; <" TRISB equ 086h ;# ">
+"563
+[; <" EECON1 equ 088h ;# ">
+"607
+[; <" EECON2 equ 089h ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"6 main.c
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"7
+[e = _TRISA -> -> 224 `i `uc ]
+"8
+[e = _TRISB -> -> 0 `i `uc ]
+"12
+[e ( __delay (1 -> * -> -> 500 `i `d / .4000.0 .4000.0 `ul ]
+"13
+[e = _PORTA -> :s 1C `Vuc ]
+"14
+[e = _RA4 -> -> 1 `i `b ]
+"16
+[e :UE 45 ]
+}
+[a 1C 99 0 ]
+

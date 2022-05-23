@@ -1,0 +1,284 @@
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (include)
+                      00001 include <p16f84.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F84 processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2013 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00206         LIST
+                      00002 
+                      00003 ;4Mhz - контроллер
+                      00004 
+                      00005 ;настройка
+Warning[203]: Found opcode in column 1. (bsf)
+0000   1683           00006 bsf     STATUS,RP0
+Warning[203]: Found opcode in column 1. (movlw)
+0001   3000           00007 movlw   b'00000000' ;TRISA = 00000000
+Warning[203]: Found opcode in column 1. (movwf)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0002   0085           00008 movwf   TRISA
+Warning[203]: Found opcode in column 1. (movlw)
+0003   30E0           00009 movlw   b'11100000' ;TRISB = 11100000
+Warning[203]: Found opcode in column 1. (movwf)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   0086           00010 movwf   TRISB
+Warning[203]: Found opcode in column 1. (bcf)
+0005   1283           00011 bcf     STATUS,RP0
+                      00012 
+0006                  00013 close                   ;подача C на экран дисплея и включение реле + возвращение обратно в цикл whiletr
+                            uecyclxd
+Warning[203]: Found opcode in column 1. (movlw)
+0006   3001           00014 movlw   .1              ;подача C на экран дисплея
+Warning[203]: Found opcode in column 1. (call)
+0007   2016           00015 call    setledtable
+Warning[203]: Found opcode in column 1. (bcf)
+0008   1205           00016 bcf     PORTA,4         ;очистка бита в RA4 (Выключение реле)
+                      00017 
+0009                  00018 whiletruecycl   ;сканирование третьей строки(RB4) и основной цикл всего
+Warning[203]: Found opcode in column 1. (movlw)
+0009   30EF           00019 movlw   b'11101111'
+Warning[203]: Found opcode in column 1. (movwf)
+000A   0086           00020 movwf   PORTB
+                      00021                                         ;проверка первого столбца(RB5)
+000B   1B86           00022         btfsc   PORTB,7         ;Если нажата клавиша он идет в Check2, а если нет он возвращается обратн
+                            о в whiletruecyclxd чтоб чекнуть ещё раз
+000C   2809           00023         goto whiletruecycl      ;Возвращение обратно в цикл
+Warning[207]: Found label after column 1. (check2)
+000D                  00024         check2                  ;проверка второго столбца(RB6)
+000D   1B06           00025         btfsc   PORTB,6         ;Если нажата клавиша он идет в Check3, а если нет он возвращается обратн
+                            о в check2 чтоб чекнуть ещё раз
+000E   280D           00026         goto    check2          ;Возвращение обратно
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[207]: Found label after column 1. (check3)
+000F                  00027         check3                  ;проверка третьего столбца(RB7)
+000F   1A86           00028         btfsc   PORTB,5         ;Если нажата клавиша он идет в open, а если нет он возвращается обратно 
+                            в check3 чтоб чекнуть ещё раз
+0010   280F           00029         goto    check3          ;Возвращение обратно
+Warning[207]: Found label after column 1. (open)
+0011                  00030         open                    ;подача ноль на экран дисплея и включение реле + 10 сек пауза
+0011   3000           00031         movlw   .0              ;подача ноль на экран дисплея
+0012   2016           00032         call    setledtable 
+0013   1605           00033         bsf     PORTA,4         ;установка бита 1 в RA4 (включение реле)
+0014   201D           00034         call    pause10SEC      ;вызов 10 секудной паузы
+Warning[203]: Found opcode in column 1. (goto)
+0015   2806           00035 goto    close ;подача C на экран дисплея и включение реле + возвращение обратно в цикл whiletruecyclxd
+                      00036 
+0016                  00037 setledtable
+Warning[203]: Found opcode in column 1. (call)
+0016   2019           00038 call    ledtable
+Warning[203]: Found opcode in column 1. (movwf)
+0017   0085           00039 movwf PORTA
+Warning[203]: Found opcode in column 1. (return)
+0018   0008           00040 return
+                      00041 
+0019                  00042 ledtable
+Warning[203]: Found opcode in column 1. (addwf)
+Message[305]: Using default destination of 1 (file).
+0019   0782           00043 addwf   PCL
+Warning[203]: Found opcode in column 1. (retlw)
+001A   3400           00044 retlw   b'00000000' ;0 - типо open
+Warning[203]: Found opcode in column 1. (retlw)
+001B   340A           00045 retlw   b'00001010' ;С close
+Warning[203]: Found opcode in column 1. (return)
+001C   0008           00046 return
+                      00047 
+                      00048 ;10 SEC
+001D                  00049 pause10SEC
+Warning[203]: Found opcode in column 1. (movlw)
+001D   309B           00050 movlw   .155            ;тайминг
+Warning[203]: Found opcode in column 1. (movwf)
+001E   00A2           00051 movwf   0x22
+001F                  00052 a23
+Warning[203]: Found opcode in column 1. (movlw)
+001F   3000           00053 movlw   .0
+Warning[203]: Found opcode in column 1. (movwf)
+0020   0081           00054 movwf   TMR0
+Warning[203]: Found opcode in column 1. (movlw)
+0021   3007           00055 movlw   b'00000111'
+Warning[203]: Found opcode in column 1. (bsf)
+0022   1683           00056 bsf     STATUS,RP0
+Warning[203]: Found opcode in column 1. (movwf)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0023   0081           00057 movwf OPTION_REG
+0024                  00058 a234
+Warning[203]: Found opcode in column 1. (btfss)
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0024   1D0B           00059 btfss   INTCON,T0IF
+Warning[203]: Found opcode in column 1. (goto)
+0025   2824           00060 goto    a234
+Warning[203]: Found opcode in column 1. (bcf)
+0026   110B           00061 bcf     INTCON,T0IF
+Warning[203]: Found opcode in column 1. (bcf)
+0027   1283           00062 bcf     STATUS,RP0
+Warning[203]: Found opcode in column 1. (decfsz)
+Message[305]: Using default destination of 1 (file).
+0028   0BA2           00063 decfsz  0x22
+Warning[203]: Found opcode in column 1. (goto)
+0029   281F           00064 goto    a23
+Warning[203]: Found opcode in column 1. (return)
+002A   0008           00065 return
+                      00066 
+Warning[205]: Found directive in column 1. (end)
+                      00067 end
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TMR0                              00000001
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TMR0IE                            00000005
+TMR0IF                            00000002
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_FOSC_EXTRC                       00003FFF
+_FOSC_HS                          00003FFE
+_FOSC_LP                          00003FFC
+_FOSC_XT                          00003FFD
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDTE_OFF                         00003FFB
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84                           00000001
+__DEBUG                           1
+a23                               0000001F
+a234                              00000024
+check2                            0000000D
+check3                            0000000F
+close                             00000006
+ledtable                          00000019
+open                              00000011
+pause10SEC                        0000001D
+MPASM  5.51                          13_5.ASM   5-20-2022  11:44:40         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+setledtable                       00000016
+whiletruecycl                     00000009
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXX----- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    43
+Program Memory Words Free:   981
+
+
+Errors   :     0
+Warnings :    38 reported,     0 suppressed
+Messages :     5 reported,     0 suppressed
+
+

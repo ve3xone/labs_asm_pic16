@@ -1,0 +1,47 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Mon Apr 18 02:27:17 2022
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x0000c0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00005f      
+            96 out of 1093 program addresses used, program memory utilization is 8%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       a1   0x00004f    program     static C:\ASMProjects\13_2\L13_2.asm
+                       a2   0x000049    program     static C:\ASMProjects\13_2\L13_2.asm
+                      but   0x000008    program     static C:\ASMProjects\13_2\L13_2.asm
+                     but1   0x00000d    program     static C:\ASMProjects\13_2\L13_2.asm
+                     but2   0x000024    program     static C:\ASMProjects\13_2\L13_2.asm
+                    check   0x000057    program     static C:\ASMProjects\13_2\L13_2.asm
+                      ckl   0x00005c    program     static C:\ASMProjects\13_2\L13_2.asm
+                 ledtable   0x00003b    program     static C:\ASMProjects\13_2\L13_2.asm
+                    pause   0x000047    program     static C:\ASMProjects\13_2\L13_2.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      but   0x000008    program     static C:\ASMProjects\13_2\L13_2.asm
+                     but1   0x00000d    program     static C:\ASMProjects\13_2\L13_2.asm
+                     but2   0x000024    program     static C:\ASMProjects\13_2\L13_2.asm
+                 ledtable   0x00003b    program     static C:\ASMProjects\13_2\L13_2.asm
+                    pause   0x000047    program     static C:\ASMProjects\13_2\L13_2.asm
+                       a2   0x000049    program     static C:\ASMProjects\13_2\L13_2.asm
+                       a1   0x00004f    program     static C:\ASMProjects\13_2\L13_2.asm
+                    check   0x000057    program     static C:\ASMProjects\13_2\L13_2.asm
+                      ckl   0x00005c    program     static C:\ASMProjects\13_2\L13_2.asm
+
+

@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+a	Z:\Projects\ASMProjects\13_5\13_5.asm	71;"	l	line:71
+a2	Z:\Projects\ASMProjects\13_5\13_5.asm	65;"	l	line:65
+a23	Z:\Projects\ASMProjects\13_5\13_5.asm	84;"	l	line:84
+a234	Z:\Projects\ASMProjects\13_5\13_5.asm	90;"	l	line:90
+addwf	Z:\Projects\ASMProjects\13_5\13_5.asm	48;"	l	line:48
+base	Z:\Projects\ASMProjects\13_5\13_5.asm	42;"	l	line:42
+bcf	Z:\Projects\ASMProjects\13_5\13_5.asm	74;"	l	line:74
+bcf	Z:\Projects\ASMProjects\13_5\13_5.asm	75;"	l	line:75
+bcf	Z:\Projects\ASMProjects\13_5\13_5.asm	93;"	l	line:93
+bcf	Z:\Projects\ASMProjects\13_5\13_5.asm	94;"	l	line:94
+bcf	Z:\Projects\ASMProjects\13_5\13_5.asm	9;"	l	line:9
+bsf	Z:\Projects\ASMProjects\13_5\13_5.asm	4;"	l	line:4
+bsf	Z:\Projects\ASMProjects\13_5\13_5.asm	69;"	l	line:69
+bsf	Z:\Projects\ASMProjects\13_5\13_5.asm	88;"	l	line:88
+btfss	Z:\Projects\ASMProjects\13_5\13_5.asm	72;"	l	line:72
+btfss	Z:\Projects\ASMProjects\13_5\13_5.asm	91;"	l	line:91
+call	Z:\Projects\ASMProjects\13_5\13_5.asm	13;"	l	line:13
+call	Z:\Projects\ASMProjects\13_5\13_5.asm	17;"	l	line:17
+call	Z:\Projects\ASMProjects\13_5\13_5.asm	43;"	l	line:43
+decfsz	Z:\Projects\ASMProjects\13_5\13_5.asm	76;"	l	line:76
+decfsz	Z:\Projects\ASMProjects\13_5\13_5.asm	95;"	l	line:95
+goto	Z:\Projects\ASMProjects\13_5\13_5.asm	40;"	l	line:40
+goto	Z:\Projects\ASMProjects\13_5\13_5.asm	73;"	l	line:73
+goto	Z:\Projects\ASMProjects\13_5\13_5.asm	77;"	l	line:77
+goto	Z:\Projects\ASMProjects\13_5\13_5.asm	92;"	l	line:92
+goto	Z:\Projects\ASMProjects\13_5\13_5.asm	96;"	l	line:96
+include	Z:\Projects\ASMProjects\13_5\13_5.asm	1;"	l	line:1
+ledtable	Z:\Projects\ASMProjects\13_5\13_5.asm	47;"	l	line:47
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	12;"	l	line:12
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	18;"	l	line:18
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	5;"	l	line:5
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	63;"	l	line:63
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	66;"	l	line:66
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	68;"	l	line:68
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	7;"	l	line:7
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	82;"	l	line:82
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	85;"	l	line:85
+movlw	Z:\Projects\ASMProjects\13_5\13_5.asm	87;"	l	line:87
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	19;"	l	line:19
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	44;"	l	line:44
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	64;"	l	line:64
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	67;"	l	line:67
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	6;"	l	line:6
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	70;"	l	line:70
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	83;"	l	line:83
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	86;"	l	line:86
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	89;"	l	line:89
+movwf	Z:\Projects\ASMProjects\13_5\13_5.asm	8;"	l	line:8
+next6	Z:\Projects\ASMProjects\13_5\13_5.asm	16;"	l	line:16
+pause	Z:\Projects\ASMProjects\13_5\13_5.asm	62;"	l	line:62
+pause2	Z:\Projects\ASMProjects\13_5\13_5.asm	81;"	l	line:81
+reload	Z:\Projects\ASMProjects\13_5\13_5.asm	39;"	l	line:39
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	49;"	l	line:49
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	50;"	l	line:50
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	51;"	l	line:51
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	52;"	l	line:52
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	53;"	l	line:53
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	54;"	l	line:54
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	55;"	l	line:55
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	56;"	l	line:56
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	57;"	l	line:57
+retlw	Z:\Projects\ASMProjects\13_5\13_5.asm	58;"	l	line:58
+return	Z:\Projects\ASMProjects\13_5\13_5.asm	45;"	l	line:45
+return	Z:\Projects\ASMProjects\13_5\13_5.asm	59;"	l	line:59
+return	Z:\Projects\ASMProjects\13_5\13_5.asm	78;"	l	line:78
+return	Z:\Projects\ASMProjects\13_5\13_5.asm	97;"	l	line:97
